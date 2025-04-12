@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, View, Dimensions } from 'react-native';
-import MapView from 'react-native-maps';
+import { StyleSheet, View, Dimensions, Platform } from 'react-native';
+import MapView, { PROVIDER_GOOGLE, PROVIDER_DEFAULT } from 'react-native-maps';
 
 const MapComponent: React.FC = () => {
   return (
@@ -15,6 +15,11 @@ const MapComponent: React.FC = () => {
         }}
         showsUserLocation={true}
         followsUserLocation={true}
+        zoomControlEnabled={Platform.OS === 'android'}
+        zoomEnabled={true}
+        rotateEnabled={true}
+        scrollEnabled={true}
+        pitchEnabled={true}
       />
     </View>
   );
