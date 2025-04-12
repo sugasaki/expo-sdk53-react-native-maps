@@ -23,9 +23,6 @@ export default function TabTwoScreen() {
         <ThemedText type="title">Explore</ThemedText>
       </ThemedView>
       <ThemedText>This app includes example code to help you get started.</ThemedText>
-      <ThemedView style={styles.mapContainer}>
-        <ThemedText style={styles.mapPlaceholder}>Map View</ThemedText>
-      </ThemedView>
       <Collapsible title="File-based routing">
         <ThemedText>
           This app has two screens:{' '}
@@ -108,18 +105,5 @@ const styles = StyleSheet.create({
   titleContainer: {
     flexDirection: 'row',
     gap: 8,
-  },
-  mapContainer: {
-    height: 200,
-    width: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#e0e0e0',
-    borderRadius: 8,
-    marginVertical: 10,
-  },
-  mapPlaceholder: {
-    fontSize: 16,
-    color: '#808080',
   },
 });

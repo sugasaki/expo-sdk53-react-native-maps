@@ -16,9 +16,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "statusBar": {
-        "style": "auto"
-      }
+      "edgeToEdgeEnabled": true
     },
     "web": {
       "bundler": "metro",
