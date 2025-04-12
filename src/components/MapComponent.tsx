@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, View, Dimensions, Platform } from 'react-native';
-import MapView, { PROVIDER_GOOGLE, PROVIDER_DEFAULT } from 'react-native-maps';
+import { StyleSheet, View, Platform } from 'react-native';
+import MapView from 'react-native-maps';
 
 const MapComponent: React.FC = () => {
   return (
