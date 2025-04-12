@@ -41,9 +41,11 @@
       "typedRoutes": true
     },
     "extra": {
+      "router": {},
       "eas": {
-        "projectId": "your-project-id"
+        "projectId": "d4ec95b6-4e63-4f1d-9b50-0ed9bcfa365d"
       }
-    }
+    },
+    "owner": "sugasaki"
   }
 }
