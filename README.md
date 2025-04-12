@@ -1,50 +1,61 @@
-# Welcome to your Expo app 👋
+# Expo SDK 53 with React Native Maps 🗺️
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+このプロジェクトは [Expo](https://expo.dev) を使用して作成された、地図機能を含むモバイルアプリケーションです。
 
-## Get started
+## 機能
 
-1. Install dependencies
+- **フルスクリーン地図表示**: アプリ起動時に地図がフルスクリーンで表示されます
+- **タブナビゲーション**: 地図、ホーム、探索の3つのタブを持つナビゲーション
+- **プラットフォーム最適化**: iOS では Apple Maps、Android では Google Maps のズームコントロールを使用
+- **位置情報サポート**: ユーザーの現在位置を表示し、追跡する機能
+
+## 始め方
+
+1. 依存関係をインストール
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. アプリを起動
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+出力には、以下の方法でアプリを開くオプションが表示されます：
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- [開発ビルド](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android エミュレータ](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS シミュレータ](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go)（Expo でのアプリ開発を試すための限定的なサンドボックス）
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+**app** ディレクトリ内のファイルを編集して開発を始めることができます。このプロジェクトは [ファイルベースのルーティング](https://docs.expo.dev/router/introduction) を使用しています。
 
-## Get a fresh project
+## 使用している主要パッケージ
 
-When you're ready, run:
+- **react-native-maps**: 地図表示のための主要コンポーネント
+- **expo-router**: タブナビゲーションとルーティング
+- **expo-location**: 位置情報の取得と管理（将来的な実装のため）
 
-```bash
-npm run reset-project
-```
+## プロジェクト構造
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- **/app/(tabs)/index.tsx**: メインの地図画面
+- **/app/(tabs)/home.tsx**: ホーム画面
+- **/app/(tabs)/explore.tsx**: 探索画面
+- **/components/MapComponent.tsx**: 地図コンポーネント
 
-## Learn more
+## 詳細情報
 
-To learn more about developing your project with Expo, look at the following resources:
+Expo や React Native Maps についての詳細は、以下のリソースを参照してください：
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- [Expo ドキュメント](https://docs.expo.dev/)
+- [React Native Maps ドキュメント](https://github.com/react-native-maps/react-native-maps)
+- [Expo Router ドキュメント](https://docs.expo.dev/router/introduction)
 
-## Join the community
+## コミュニティに参加
 
-Join our community of developers creating universal apps.
+ユニバーサルアプリを作成する開発者コミュニティに参加しましょう。
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [GitHub の Expo](https://github.com/expo/expo)
+- [Discord コミュニティ](https://chat.expo.dev)
