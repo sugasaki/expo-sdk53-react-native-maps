@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Dimensions } from 'react-native';
 import MapView from 'react-native-maps';
 
 const MapComponent: React.FC = () => {
@@ -23,9 +23,17 @@ const MapComponent: React.FC = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    width: '100%',
+    height: '100%',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
   },
   map: {
-    flex: 1,
+    width: '100%',
+    height: '100%',
   },
 });
 
