@@ -4,10 +4,15 @@
     "slug": "expo-sdk53-react-native-maps",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./src/assets/images/icon.png",
+    "icon": "./assets/images/icon.png",
     "scheme": "exposdk53reactnativemaps",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "assetBundlePatterns": ["**/*"],
+    "splash": {
+      "foregroundImage": "./assets/splash.png",
+      "backgroundColor": "#666666"
+    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.yourcompany.exposdk53reactnativemaps",
@@ -17,7 +22,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
@@ -26,15 +31,14 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./src/assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./src/assets/images/splash-icon.png",
-          "imageWidth": 200,
+          "image": "https://github.com/expo/expo/blob/master/templates/expo-template-blank/assets/splash.png?raw=true",
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
