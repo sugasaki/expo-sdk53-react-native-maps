@@ -14,7 +14,7 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: colorScheme === 'dark' ? '#fff' : '#000',
+        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
         tabBarButton: HapticTab,
         tabBarBackground: TabBarBackground,
@@ -22,27 +22,23 @@ export default function TabLayout() {
           ios: {
             // Use a transparent background on iOS to show the blur effect
             position: 'absolute',
-            zIndex: 1,
           },
-          default: {
-            zIndex: 1,
-          },
+          default: {},
         }),
       }}
-      initialRouteName='index'
     >
       <Tabs.Screen
         name='index'
         options={{
-          title: 'Map',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name='map.fill' color={color} />,
+          title: 'Home',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name='house.fill' color={color} />,
         }}
       />
       <Tabs.Screen
-        name='home'
+        name='explore'
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name='house.fill' color={color} />,
+          title: 'Explore',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name='paperplane.fill' color={color} />,
         }}
       />
     </Tabs>
