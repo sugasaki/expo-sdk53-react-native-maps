@@ -1,13 +1,15 @@
-import { StyleSheet, View } from 'react-native';
+import React from 'react';
+import { StyleSheet } from 'react-native';
+import { ThemedView } from '@/components/ThemedView';
 import MapComponent from '@/components/MapComponent';
 import MarkerTypes from '@/components/MarkerTypes';
 
 export default function MapScreen() {
   return (
-    <View style={styles.container}>
+    <ThemedView style={styles.container}>
       {/* <MapComponent /> */}
-      <MarkerTypes />/
-    </View>
+      <MarkerTypes />
+    </ThemedView>
   );
 }
 
